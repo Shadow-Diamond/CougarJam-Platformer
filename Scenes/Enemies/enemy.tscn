@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://dikalyt8eo2a4"]
 
-[ext_resource type="Script" path="res://Scripts/enemyFollow.gd" id="1_8du3e"]
 [ext_resource type="Texture2D" uid="uid://ctv5cxlglmw3n" path="res://Sprites/Player and enemies/bat2.png" id="1_m0050"]
+[ext_resource type="Script" path="res://Scripts/enemyMovement.gd" id="1_uooc4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1nrqt"]
 radius = 7.0
 
 [node name="BatFollow" type="PathFollow2D"]
 rotates = false
-script = ExtResource("1_8du3e")
+script = ExtResource("1_uooc4")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
