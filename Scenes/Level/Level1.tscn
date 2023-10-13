@@ -1,12 +1,12 @@
 [gd_scene load_steps=6 format=3 uid="uid://c2clpqgvinuca"]
 
-[ext_resource type="PackedScene" uid="uid://cw0cleo2smhk0" path="res://player.tscn" id="1_pc6du"]
-[ext_resource type="Texture2D" uid="uid://c8n56bbhrlsqk" path="res://Platform.png" id="3_lxrvw"]
+[ext_resource type="PackedScene" uid="uid://cw0cleo2smhk0" path="res://Scenes/Player/player.tscn" id="1_u1ue4"]
+[ext_resource type="Texture2D" uid="uid://c8n56bbhrlsqk" path="res://Sprites/LevelSprites/Platforms/Platform.png" id="2_pac4w"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_akg4r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p2huq"]
-texture = ExtResource("3_lxrvw")
+texture = ExtResource("2_pac4w")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -20,7 +20,7 @@ sources/0 = SubResource("TileSetAtlasSource_p2huq")
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_pc6du")]
+[node name="Player" parent="." instance=ExtResource("1_u1ue4")]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_54j2h")
