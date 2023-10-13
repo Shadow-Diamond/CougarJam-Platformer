@@ -8,7 +8,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var speed: float = 0.15
+	var speed: float = 0.08
 	progress_ratio += delta * speed
 	if(progress_ratio > 1.0):
 		progress_ratio = 0.0
