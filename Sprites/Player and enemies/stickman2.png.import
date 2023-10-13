@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bw3hnsocwrpfo"
-path="res://.godot/imported/Platform.png-07223a889232750b352441699569d6d9.ctex"
+uid="uid://bvpwr1phhmdxx"
+path="res://.godot/imported/stickman2.png-f0d0768585b343083c3a2c232bc14a4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/LevelSprites/Platforms/Platform.png"
-dest_files=["res://.godot/imported/Platform.png-07223a889232750b352441699569d6d9.ctex"]
+source_file="res://Sprites/Player and enemies/stickman2.png"
+dest_files=["res://.godot/imported/stickman2.png-f0d0768585b343083c3a2c232bc14a4b.ctex"]
 
 [params]
 
