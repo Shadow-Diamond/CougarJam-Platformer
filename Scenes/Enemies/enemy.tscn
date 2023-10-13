@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dikalyt8eo2a4"]
 
-[ext_resource type="Texture2D" uid="uid://ctv5cxlglmw3n" path="res://Sprites/Player and enemies/bat2.png" id="1_m0050"]
 [ext_resource type="Script" path="res://Scripts/enemyMovement.gd" id="1_uooc4"]
+[ext_resource type="Texture2D" uid="uid://sjfxrtbkf0ti" path="res://Sprites/Player and enemies/bat3.png" id="2_vsgyr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1nrqt"]
 radius = 7.0
@@ -13,10 +13,11 @@ script = ExtResource("1_uooc4")
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-scale = Vector2(1.5, 1.5)
+position = Vector2(0, -3)
+scale = Vector2(3.25, 3.25)
 shape = SubResource("CircleShape2D_1nrqt")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(2.38419e-07, -1.19209e-07)
 scale = Vector2(0.98, 1)
-texture = ExtResource("1_m0050")
+texture = ExtResource("2_vsgyr")
