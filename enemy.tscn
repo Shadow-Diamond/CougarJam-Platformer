@@ -1,11 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dikalyt8eo2a4"]
+[gd_scene load_steps=4 format=3 uid="uid://dikalyt8eo2a4"]
 
 [ext_resource type="Texture2D" uid="uid://cjepsw08xvuao" path="res://icon.svg" id="1_0ycp5"]
-[ext_resource type="Script" path="res://Path2D.gd" id="2_o40s6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1nrqt"]
 
-[sub_resource type="Curve2D" id="Curve2D_nqiiw"]
+[sub_resource type="Curve2D" id="Curve2D_5dmue"]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 
@@ -18,5 +17,4 @@ texture = ExtResource("1_0ycp5")
 shape = SubResource("CircleShape2D_1nrqt")
 
 [node name="Path2D" type="Path2D" parent="."]
-curve = SubResource("Curve2D_nqiiw")
-script = ExtResource("2_o40s6")
+curve = SubResource("Curve2D_5dmue")
