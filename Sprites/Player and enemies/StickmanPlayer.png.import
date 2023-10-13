@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3ybecqp4tnr5"
-path="res://.godot/imported/StickmanPlayer.png-fca9cf0cd55a2e3fddcb713059423b65.ctex"
+path="res://.godot/imported/StickmanPlayer.png-8db17ef9b6a3e52442bc52abc4ec494b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/StickmanPlayer.png"
-dest_files=["res://.godot/imported/StickmanPlayer.png-fca9cf0cd55a2e3fddcb713059423b65.ctex"]
+source_file="res://Sprites/Player and enemies/StickmanPlayer.png"
+dest_files=["res://.godot/imported/StickmanPlayer.png-8db17ef9b6a3e52442bc52abc4ec494b.ctex"]
 
 [params]
 
