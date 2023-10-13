@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://c2clpqgvinuca"]
+
+[ext_resource type="PackedScene" uid="uid://cw0cleo2smhk0" path="res://player.tscn" id="1_pc6du"]
+[ext_resource type="Texture2D" uid="uid://c8n56bbhrlsqk" path="res://Platform.png" id="3_lxrvw"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_akg4r"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p2huq"]
+texture = ExtResource("3_lxrvw")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.1875, -12.75, 12.0625, -12.375, 12.3125, 12.375, -12.0625, 12.375)
+
+[sub_resource type="TileSet" id="TileSet_54j2h"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_akg4r")
+sources/0 = SubResource("TileSetAtlasSource_p2huq")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_pc6du")]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_54j2h")
+cell_quadrant_size = 32
+format = 2
+layer_0/tile_data = PackedInt32Array(2555904, 0, 0, 2555905, 0, 0, 2555906, 0, 0, 2555907, 0, 0, 2555908, 0, 0, 2555909, 0, 0, 2555910, 0, 0, 2555911, 0, 0, 2555912, 0, 0, 2555913, 0, 0, 2555914, 0, 0, 2555915, 0, 0, 2555916, 0, 0, 2555917, 0, 0, 2555918, 0, 0, 2555919, 0, 0, 2555920, 0, 0, 2555921, 0, 0, 2555922, 0, 0, 2555923, 0, 0, 2555924, 0, 0, 2555925, 0, 0, 2555926, 0, 0, 2555927, 0, 0, 2555928, 0, 0, 2555929, 0, 0, 2555930, 0, 0, 2555931, 0, 0, 2555932, 0, 0, 2555933, 0, 0, 2555934, 0, 0, 2555935, 0, 0, 2555936, 0, 0, 2555937, 0, 0, 2555938, 0, 0, 2555939, 0, 0, 2555940, 0, 0, 2555941, 0, 0, 2555942, 0, 0, 2555943, 0, 0, 2555944, 0, 0, 2555945, 0, 0, 2555946, 0, 0, 2555947, 0, 0, 2555948, 0, 0, 2555949, 0, 0, 2555950, 0, 0, 2555951, 0, 0, 2555952, 0, 0, 2555953, 0, 0, 2555954, 0, 0, 2555955, 0, 0, 2555956, 0, 0, 2555957, 0, 0, 2555958, 0, 0, 2555959, 0, 0, 2555960, 0, 0, 2555961, 0, 0, 2555962, 0, 0, 2555963, 0, 0, 2555964, 0, 0, 2555965, 0, 0, 2555966, 0, 0, 2555967, 0, 0, 2555968, 0, 0, 2555969, 0, 0, 2555970, 0, 0, 2555971, 0, 0, 2555972, 0, 0, 2555973, 0, 0, 2555974, 0, 0)

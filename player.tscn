@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw0cleo2smhk0"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_47w1d"]
+[ext_resource type="Texture2D" uid="uid://3ybecqp4tnr5" path="res://StickmanPlayer.png" id="2_j7pxb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yb1y7"]
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(395, 570)
+script = ExtResource("1_47w1d")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_j7pxb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_yb1y7")
