@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://dixfioobatusd" path="res://Sprites/LevelSprites/basicNightSky.png" id="1_7wh8v"]
 [ext_resource type="PackedScene" uid="uid://cw0cleo2smhk0" path="res://Scenes/Player/player.tscn" id="1_u1ue4"]
 [ext_resource type="Texture2D" uid="uid://dcvsr6kniw1ct" path="res://Sprites/LevelSprites/Platforms/Platform.png" id="2_pac4w"]
-[ext_resource type="PackedScene" uid="uid://dikalyt8eo2a4" path="res://Scenes/Enemies/bat.tscn" id="3_ij8qw"]
-[ext_resource type="PackedScene" uid="uid://bk5xnv05u1hq5" path="res://Scenes/Enemies/ghost.tscn" id="5_yhfag"]
+[ext_resource type="PackedScene" uid="uid://o2yo3lbf8xnj" path="res://Scenes/Enemies/enemy.tscn" id="3_ij8qw"]
+[ext_resource type="PackedScene" path="res://Scenes/Enemies/ghost.tscn" id="5_yhfag"]
 [ext_resource type="Script" path="res://Scripts/ghostMovement.gd" id="6_s8frn"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_akg4r"]
