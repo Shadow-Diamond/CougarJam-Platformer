@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnbgqgit5yf0q"]
+
+[ext_resource type="Texture2D" uid="uid://4kfe7st2gygt" path="res://Sprites/Player and enemies/Alien eye.png" id="1_hq7wu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xihpw"]
+radius = 37.0135
+
+[node name="Eye" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-3, 2)
+texture = ExtResource("1_hq7wu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_xihpw")
