@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://dikalyt8eo2a4"]
 
-[ext_resource type="Script" path="res://Scripts/enemyMovement.gd" id="1_uooc4"]
+[ext_resource type="Script" path="res://Scripts/batMovement.gd" id="1_rcc5k"]
 [ext_resource type="Texture2D" uid="uid://sjfxrtbkf0ti" path="res://Sprites/Player and enemies/bat3.png" id="2_l0bvu"]
 
 [node name="BatFollow" type="PathFollow2D"]
 rotates = false
-script = ExtResource("1_uooc4")
+script = ExtResource("1_rcc5k")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 

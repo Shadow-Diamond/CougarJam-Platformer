@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://c2clpqgvinuca"]
+[gd_scene load_steps=12 format=3 uid="uid://c2clpqgvinuca"]
 
 [ext_resource type="Texture2D" uid="uid://dixfioobatusd" path="res://Sprites/LevelSprites/basicNightSky.png" id="1_7wh8v"]
 [ext_resource type="PackedScene" uid="uid://cw0cleo2smhk0" path="res://Scenes/Player/player.tscn" id="1_u1ue4"]
 [ext_resource type="Texture2D" uid="uid://dcvsr6kniw1ct" path="res://Sprites/LevelSprites/Platforms/Platform.png" id="2_pac4w"]
-[ext_resource type="PackedScene" uid="uid://dikalyt8eo2a4" path="res://Scenes/Enemies/enemy.tscn" id="3_ij8qw"]
+[ext_resource type="PackedScene" uid="uid://dikalyt8eo2a4" path="res://Scenes/Enemies/bat.tscn" id="3_ij8qw"]
+[ext_resource type="PackedScene" uid="uid://bk5xnv05u1hq5" path="res://Scenes/Enemies/ghost.tscn" id="5_yhfag"]
+[ext_resource type="Script" path="res://Scripts/ghostMovement.gd" id="6_s8frn"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_akg4r"]
 
@@ -160,6 +162,12 @@ _data = {
 }
 point_count = 3
 
+[sub_resource type="Curve2D" id="Curve2D_kftdq"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1275, 736, 0, 0, 0, 0, 1275, 463, 0, 0, 0, 0, 1275, 778, 0, 0, 0, 0, 1331, 844, 0, 0, 0, 0, 1279, 903, 0, 0, 0, 0, 1219, 862, 0, 0, 0, 0, 1275, 736)
+}
+point_count = 7
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_u1ue4")]
@@ -175,22 +183,31 @@ cell_quadrant_size = 64
 format = 2
 layer_0/tile_data = PackedInt32Array(2555904, 0, 0, 2555905, 0, 0, 2555906, 0, 0, 2555907, 0, 0, 2555908, 0, 0, 2555909, 0, 0, 2555910, 0, 0, 2555911, 0, 0, 2555912, 0, 0, 2555913, 0, 0, 2555914, 0, 0, 2555915, 0, 0, 2555916, 0, 0, 2555917, 0, 0, 2555918, 0, 0, 2555919, 0, 0, 2555920, 0, 0, 2555921, 0, 0, 2555922, 0, 0, 2555923, 0, 0, 2555924, 0, 0, 2555925, 0, 0, 2555926, 0, 0, 2555927, 0, 0, 2555928, 0, 0, 2555929, 0, 0, 2555930, 0, 0, 2555931, 0, 0, 2555932, 0, 0, 2555933, 0, 0, 2555934, 0, 0, 2555935, 0, 0, 2555936, 0, 0, 2555937, 0, 0, 2555938, 0, 0, 2555939, 0, 0, 2555940, 0, 0, 2555941, 0, 0, 2555942, 0, 0, 2555943, 0, 0, 2555944, 0, 0, 2555945, 0, 0, 2555946, 0, 0, 2555947, 0, 0, 2555948, 0, 0, 2555949, 0, 0, 2555950, 0, 0, 2555951, 0, 0, 2555952, 0, 0, 2555953, 0, 0, 2555954, 0, 0, 2555955, 0, 0, 2555956, 0, 0, 2555957, 0, 0, 2555958, 0, 0, 2555959, 0, 0, 2555960, 0, 0, 2555961, 0, 0, 2555962, 0, 0, 2555963, 0, 0, 2555964, 0, 0, 2555965, 0, 0, 2555966, 0, 0, 2555967, 0, 0, 2555968, 0, 0, 2555969, 0, 0, 2555970, 0, 0, 2555971, 0, 0, 2555972, 0, 0, 2555973, 0, 0, 2555974, 0, 0, 589824, 0, 2, 589825, 0, 2, 589826, 0, 2, 589827, 0, 2, 589828, 0, 2, 589829, 0, 2, 589830, 0, 2, 589831, 0, 2, 589832, 0, 2, 589833, 0, 2, 589834, 0, 2, 589835, 0, 2, 589836, 0, 2, 589837, 0, 2, 589838, 0, 2, 589839, 0, 2, 589840, 0, 2, 589841, 0, 2, 655360, 0, 3, 655361, 0, 3, 655362, 0, 3, 655363, 0, 3, 655364, 0, 3, 655365, 0, 3, 655366, 0, 3, 655367, 0, 3, 655368, 0, 3, 655369, 0, 3, 655370, 0, 3, 655371, 0, 3, 655372, 0, 3, 655373, 0, 3, 655374, 0, 3, 655375, 0, 3, 655376, 0, 3, 655377, 0, 3, 655378, 0, 3, 589842, 0, 2, 589843, 131072, 2, 589844, 196608, 2, 589845, 196608, 2, 589846, 262144, 2, 589847, 0, 2, 589848, 0, 2, 589849, 0, 2, 589850, 0, 2, 655379, 131072, 3, 655380, 131072, 3, 655381, 262144, 3, 655382, 262144, 3, 655383, 0, 3, 655384, 0, 3, 655385, 0, 3, 655386, 0, 3, 655387, 0, 3, 589851, 0, 2, 655388, 0, 3, 589852, 0, 2, 655389, 0, 3, 589853, 0, 2, 589854, 0, 2, 589855, 0, 2, 589856, 0, 2, 589857, 0, 2, 655390, 0, 3, 655391, 0, 3, 655392, 0, 3, 655393, 0, 3)
 
-[node name="Path2D" type="Path2D" parent="."]
-position = Vector2(18, -44)
-curve = SubResource("Curve2D_5rwna")
-
-[node name="BatFollow" parent="Path2D" instance=ExtResource("3_ij8qw")]
-position = Vector2(395, 597)
-
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_mirroring = Vector2(1024, 0)
 
 [node name="Nightsky" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(577, 326)
+position = Vector2(578, 326)
 texture = ExtResource("1_7wh8v")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(44, 542)
 scale = Vector2(0.916649, 1.05663)
+
+[node name="Paths" type="Node2D" parent="."]
+
+[node name="Bat1" type="Path2D" parent="Paths"]
+position = Vector2(18, -44)
+curve = SubResource("Curve2D_5rwna")
+
+[node name="BatFollow" parent="Paths/Bat1" instance=ExtResource("3_ij8qw")]
+position = Vector2(395, 597)
+
+[node name="Path2D" type="Path2D" parent="Paths"]
+curve = SubResource("Curve2D_kftdq")
+
+[node name="GhostFollow" parent="Paths/Path2D" instance=ExtResource("5_yhfag")]
+position = Vector2(1275, 736)
+script = ExtResource("6_s8frn")
