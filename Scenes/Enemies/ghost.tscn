@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://bk5xnv05u1hq5"]
 
 [ext_resource type="Script" path="res://Scripts/batMovement.gd" id="1_aw612"]
-[ext_resource type="Texture2D" uid="uid://cnr8g2nwbn6it" path="res://Sprites/Player and enemies/Ghost.png" id="2_3o5sg"]
+[ext_resource type="Texture2D" uid="uid://cnkyfmb1b6k0l" path="res://Sprites/Player and enemies/Ghost.png" id="2_3o5sg"]
 
-[node name="BatFollow" type="PathFollow2D"]
+[node name="GhostFollow" type="PathFollow2D"]
 rotates = false
 script = ExtResource("1_aw612")
 
@@ -13,3 +13,6 @@ script = ExtResource("1_aw612")
 position = Vector2(7.62939e-06, -4.76837e-07)
 scale = Vector2(0.490234, 0.5)
 texture = ExtResource("2_3o5sg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+polygon = PackedVector2Array(1, 11, 10, -4, 10, -10, 8, -12, -1, -12, -5, -9, -11, 7, -5, 6, -5, 10, 0, 7)

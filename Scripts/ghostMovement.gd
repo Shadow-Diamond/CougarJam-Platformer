@@ -2,8 +2,10 @@ extends PathFollow2D
 
 
 # Called when the node enters the scene tree for the first time.
+var rng = RandomNumberGenerator.new()
 func _ready():
-	progress_ratio = 0
+	var startPos = rng.randf_range(0.0, 1.0)
+	progress_ratio = startPos
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
