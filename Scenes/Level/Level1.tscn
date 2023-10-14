@@ -185,7 +185,7 @@ layer_0/tile_data = PackedInt32Array(2555904, 0, 0, 2555905, 0, 0, 2555906, 0, 0
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2(1024, 0)
+motion_mirroring = Vector2(1024, 1)
 
 [node name="Nightsky" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(578, 326)
