@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3ybecqp4tnr5"
-path="res://.godot/imported/StickmanPlayer.png-8db17ef9b6a3e52442bc52abc4ec494b.ctex"
+uid="uid://cnr8g2nwbn6it"
+path="res://.godot/imported/Ghost.png-98515148442d9790f769ad0774c4abdc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Player and enemies/StickmanPlayer.png"
-dest_files=["res://.godot/imported/StickmanPlayer.png-8db17ef9b6a3e52442bc52abc4ec494b.ctex"]
+source_file="res://Sprites/Player and enemies/Ghost.png"
+dest_files=["res://.godot/imported/Ghost.png-98515148442d9790f769ad0774c4abdc.ctex"]
 
 [params]
 

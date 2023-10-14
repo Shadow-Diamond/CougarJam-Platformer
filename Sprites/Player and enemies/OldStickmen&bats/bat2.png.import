@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcvsr6kniw1ct"
-path="res://.godot/imported/Platform.png-07223a889232750b352441699569d6d9.ctex"
+uid="uid://ctv5cxlglmw3n"
+path="res://.godot/imported/bat2.png-a26c77c77089fbe5d29f0fc9e93de499.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/LevelSprites/Platforms/Platform.png"
-dest_files=["res://.godot/imported/Platform.png-07223a889232750b352441699569d6d9.ctex"]
+source_file="res://Sprites/Player and enemies/OldStickmen&bats/bat2.png"
+dest_files=["res://.godot/imported/bat2.png-a26c77c77089fbe5d29f0fc9e93de499.ctex"]
 
 [params]
 
