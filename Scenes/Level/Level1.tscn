@@ -205,9 +205,9 @@ curve = SubResource("Curve2D_5rwna")
 [node name="BatFollow" parent="Paths/Bat1" instance=ExtResource("3_ij8qw")]
 position = Vector2(395, 597)
 
-[node name="Path2D" type="Path2D" parent="Paths"]
+[node name="Ghost1" type="Path2D" parent="Paths"]
 curve = SubResource("Curve2D_kftdq")
 
-[node name="GhostFollow" parent="Paths/Path2D" instance=ExtResource("5_yhfag")]
+[node name="GhostFollow" parent="Paths/Ghost1" instance=ExtResource("5_yhfag")]
 position = Vector2(1275, 736)
 script = ExtResource("6_s8frn")
