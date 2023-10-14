@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bytfcp2jimtpi"]
+
+[ext_resource type="Script" path="res://Scripts/slimeMine.gd" id="1_pidy7"]
+[ext_resource type="Texture2D" uid="uid://kns5qbsxosw1" path="res://Sprites/Player and enemies/Slime.png" id="1_w2joi"]
+
+[node name="SlimeMover" type="PathFollow2D"]
+rotates = false
+loop = false
+script = ExtResource("1_pidy7")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_w2joi")
+flip_v = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+polygon = PackedVector2Array(-13, 12, 8, 8, 8, -1, 5, -5, 8, -10, 16, -16, 31, -28, 31, -31, 29, -32, 26, -32, 15, -23, 13, -23, 13, -21, 8, -17, 7, -18, 9, -20, 10, -20, 10, -23, 11, -23, 16, -30, 16, -32, 8, -32, 4, -24, 2, -24, 1, -21, -1, -18, -2, -19, -6, -30, -12, -30, -11, -21, -19, -30, -21, -28, -23, -32, -28, -31, -23, -13, -8, -8, -8, -5, -12, -6)
