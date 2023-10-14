@@ -1,11 +1,72 @@
 [gd_scene load_steps=12 format=3 uid="uid://c2clpqgvinuca"]
 
 [ext_resource type="Texture2D" uid="uid://dixfioobatusd" path="res://Sprites/LevelSprites/basicNightSky.png" id="1_7wh8v"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://cw0cleo2smhk0" path="res://Scenes/Player/player.tscn" id="1_u1ue4"]
 [ext_resource type="Texture2D" uid="uid://dcvsr6kniw1ct" path="res://Sprites/LevelSprites/Platforms/Platform.png" id="2_pac4w"]
 [ext_resource type="PackedScene" uid="uid://o2yo3lbf8xnj" path="res://Scenes/Enemies/enemy.tscn" id="3_ij8qw"]
 [ext_resource type="PackedScene" path="res://Scenes/Enemies/ghost.tscn" id="5_yhfag"]
 [ext_resource type="Script" path="res://Scripts/ghostMovement.gd" id="6_s8frn"]
+=======
+[ext_resource type="PackedScene" uid="uid://dg4oknuxm1ixn" path="res://Scenes/collectable/coin_number.tscn" id="1_frogg"]
+[ext_resource type="PackedScene" uid="uid://cw0cleo2smhk0" path="res://Scenes/Player/player.tscn" id="1_u1ue4"]
+[ext_resource type="Script" path="res://Scenes/collectable/coin_number.gd" id="2_4mfwb"]
+[ext_resource type="Texture2D" uid="uid://gxohuvt1on3h" path="res://Sprites/LevelSprites/Platforms/Platform.png" id="2_pac4w"]
+[ext_resource type="PackedScene" path="res://Scenes/Enemies/slime_mine.tscn" id="3_cjov3"]
+[ext_resource type="PackedScene" uid="uid://dikalyt8eo2a4" path="res://Scenes/Enemies/bat.tscn" id="3_ij8qw"]
+[ext_resource type="PackedScene" uid="uid://bk5xnv05u1hq5" path="res://Scenes/Enemies/ghost.tscn" id="5_yhfag"]
+[ext_resource type="Script" path="res://Scripts/slimeMine.gd" id="6_lhl4k"]
+[ext_resource type="PackedScene" uid="uid://dehmqwwqowike" path="res://Scenes/collectable/coin.tscn" id="7_hj1g6"]
+[ext_resource type="Texture2D" uid="uid://4kfe7st2gygt" path="res://Sprites/Player and enemies/Alien eye.png" id="10_3ignx"]
+
+[sub_resource type="Curve2D" id="Curve2D_5rwna"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 395, 597, 0, 0, 0, 0, 214, 597, 0, 0, 0, 0, 395, 597)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_jq1o3"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1273, 755, 0, 0, 0, 0, 1273, 446, 0, 0, 0, 0, 1273, 833, 0, 0, 0, 0, 1336, 918, 0, 0, 0, 0, 1193, 914, 0, 0, 0, 0, 1273, 755)
+}
+point_count = 6
+
+[sub_resource type="Curve2D" id="Curve2D_r2q2d"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2264, 538, 0, 0, 0, 0, 1509, 537, 0, 0, 0, 0, 2264, 538)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_tt5uf"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3277, 166, 0, 0, 0, 0, 3276, 564)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_xy802"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2889, 163, 0, 0, 0, 0, 2889, 563)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_acaje"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3926, 30, 0, 0, 0, 0, 3286, 30, 0, 0, 0, 0, 3926, 30)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_pffyo"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2897, -487, 0, 0, 0, 0, 2113, -487, 0, 0, 0, 0, 2113, -674, 0, 0, 0, 0, 2961, -674, 0, 0, 0, 0, 2897, -487)
+}
+point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_61l2a"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3157, -279, 0, 0, 0, 0, 3157, 45)
+}
+point_count = 2
+>>>>>>> Stashed changes
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_akg4r"]
 

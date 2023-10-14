@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 window/stretch/mode="viewport"
 
+[layer_names]
+
+2d_physics/layer_1="P"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
