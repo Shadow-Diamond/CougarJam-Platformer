@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://c2clpqgvinuca"]
+[gd_scene load_steps=23 format=3 uid="uid://c2clpqgvinuca"]
 
 [ext_resource type="Texture2D" uid="uid://dixfioobatusd" path="res://Sprites/LevelSprites/basicNightSky.png" id="1_7wh8v"]
 [ext_resource type="PackedScene" path="res://Scenes/collectable/coin_number.tscn" id="1_frogg"]
@@ -53,6 +53,12 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 2897, -487, 0, 0, 0, 0, 2113, -487, 0, 0, 0, 0, 2113, -674, 0, 0, 0, 0, 2961, -674, 0, 0, 0, 0, 2897, -487)
 }
 point_count = 5
+
+[sub_resource type="Curve2D" id="Curve2D_61l2a"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3157, -279, 0, 0, 0, 0, 3157, 45)
+}
+point_count = 2
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_akg4r"]
 
@@ -339,6 +345,14 @@ curve = SubResource("Curve2D_pffyo")
 
 [node name="GhostFollow" parent="Paths/Ghost3" instance=ExtResource("5_yhfag")]
 position = Vector2(2897, -487)
+
+[node name="SlimeMine3" type="Path2D" parent="Paths"]
+curve = SubResource("Curve2D_61l2a")
+
+[node name="SlimeMover" parent="Paths/SlimeMine3" instance=ExtResource("3_cjov3")]
+position = Vector2(3157, -279)
+loop = true
+script = ExtResource("6_lhl4k")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-14, 0)
