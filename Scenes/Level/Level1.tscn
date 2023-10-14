@@ -1,11 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://c2clpqgvinuca"]
+[gd_scene load_steps=15 format=3 uid="uid://c2clpqgvinuca"]
 
 [ext_resource type="Texture2D" uid="uid://dixfioobatusd" path="res://Sprites/LevelSprites/basicNightSky.png" id="1_7wh8v"]
 [ext_resource type="PackedScene" uid="uid://cw0cleo2smhk0" path="res://Scenes/Player/player.tscn" id="1_u1ue4"]
 [ext_resource type="Texture2D" uid="uid://dcvsr6kniw1ct" path="res://Sprites/LevelSprites/Platforms/Platform.png" id="2_pac4w"]
-[ext_resource type="PackedScene" uid="uid://bytfcp2jimtpi" path="res://Scenes/Enemies/slime_mine.tscn" id="3_cjov3"]
+[ext_resource type="PackedScene" path="res://Scenes/Enemies/slime_mine.tscn" id="3_cjov3"]
 [ext_resource type="PackedScene" uid="uid://dikalyt8eo2a4" path="res://Scenes/Enemies/bat.tscn" id="3_ij8qw"]
 [ext_resource type="PackedScene" uid="uid://bk5xnv05u1hq5" path="res://Scenes/Enemies/ghost.tscn" id="5_yhfag"]
+[ext_resource type="PackedScene" uid="uid://dehmqwwqowike" path="res://Scenes/collectable/coin.tscn" id="7_hj1g6"]
 
 [sub_resource type="Curve2D" id="Curve2D_5rwna"]
 _data = {
@@ -242,3 +243,6 @@ texture = ExtResource("1_7wh8v")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(44, 542)
 scale = Vector2(0.916649, 1.05663)
+
+[node name="Coin" parent="." instance=ExtResource("7_hj1g6")]
+position = Vector2(138, 548)
